@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -10,7 +10,6 @@ import resumePDF from "./assets/resume.pdf";
 const App = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [activeIndex, setActiveIndex] = useState(null);
-  const glitchRef = useRef(null);
 
   useEffect(() => {
     AOS.init({
